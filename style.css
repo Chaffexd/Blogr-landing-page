@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+:root {
+    --dark-red-cta: hsl(356, 100%, 66%);
+    --light-red-cta: hsl(355, 100%, 74%);
+    --dark-blue-heading: hsl(208, 49%, 24%);
+    --white: hsl(0, 0%, 100%);
+    --grayish-blue-footer: hsl(240, 2%, 79%);
+    --dark-grayish-blue: hsl(207, 13%, 34%);
+    --very-dark-blue: hsl(240, 10%, 16%);
+}
+
+/* NAVBAR */
+nav {
+    padding: 2em 10em;
+}
+
+nav img {
+    padding-right: 2em;
+}
+
+nav, .siteNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+}
+
+button img {
+    margin-left: .5em;
+}
+
+button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+    font-size: .9em;
+}
+
+header {
+    text-align: center;
+    background-image: url(/images/bg-pattern-intro-desktop.svg), linear-gradient(100deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    background-size: 218%, auto;
+    background-position: 25% 52%;
+    height: 75vh;
+    border-radius: 0 0 0 6em;
+}
+
+header h1 {
+    color: white;
+    font-size: 3em;
+    font-weight: 500;
+    padding: 2em 0 .5em 0;
+}
+
+header p {
+    color: white;
+    padding: 0 0 2em 0;
+}
+
+.startButton, .loginButton {
+    background-color: white;
+    color: var(--dark-red-cta);
+    border-radius: 30px;
+    width: 140px;
+    padding: 1.1em;
+    font-weight: bold;
+}
+
+.learnMoreButton {
+    color: white;
+    border-radius: 30px;
+    width: 140px;
+    padding: 1.1em;
+    border: 1px solid var(--white);
+    font-weight: bold;
+}
+
+/* For the drop down */
+.dropdownItem {
+    position: relative;
+}
+
+.dropdown {
+    position: absolute;
+    background: var(--white);
+    border-radius: 8px;
+    padding: 1em;
+    text-align: left;
+    margin-top: 1em;
+    height: 14em;
+    width: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    visibility: hidden;
+}
+
+.show {
+    visibility: visible;
+}
+
+.rotateImg {
+    transform: rotate(90deg);
+}
+
+.dropdown li a {
+    color: black;
+    text-decoration: none;
+}
+
+.dropdown li a:hover {
+    font-weight: bold;
+}
