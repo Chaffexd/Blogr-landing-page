@@ -15,12 +15,12 @@
     <nav>
       <div class="siteNav">
         <img src="/images/logo.svg" alt="Blogr logo">
-        <ul>
+        <ul id="navBar">
           <li class="dropdownItem">
             <button class="dropdownButton">Product
               <img src="/images/icon-arrow-light.svg" alt="Drop down arrow">
             </button>
-            <ul class="dropdown dropdown-content">
+            <ul class="dropdown dropdown-content1">
               <li><a href="#">Overview</a></li>
               <li><a href="#">Pricing</a></li>
               <li><a href="#">Marketplace</a></li>
@@ -28,26 +28,26 @@
               <li><a href="#">Integrations</a></li>
             </ul>
           </li>
-          <li>
+          <li class="dropdownItem">
             <button class="dropdownButton">Company
               <img src="/images/icon-arrow-light.svg" alt="Drop down arrow">
             </button>
-            <ul class="dropdown dropdown-content">
+            <ul class="dropdown dropdown-content2">
               <li><a href="#">About</a></li>
               <li><a href="#">Team</a></li>
               <li><a href="#">Our Blog</a></li>
               <li><a href="#">Careers</a></li>
             </ul>
           </li>
-          <li>
+          <li class="dropdownItem">
             <button class="dropdownButton">Connect
               <img src="/images/icon-arrow-light.svg" alt="Drop down arrow">
             </button>
-            <!-- <ul class="dropdown dropdown-content">
+            <ul class="dropdown dropdown-content3">
               <li><a href="#">Contact</a></li>
               <li><a href="#">Newsletter</a></li>
               <li><a href="#">LinkedIn</a></li>
-            </ul> -->
+            </ul>
           </li>
         </ul>
       </div>
@@ -62,7 +62,99 @@
     <button class="learnMoreButton">Learn More</button>
   </header>
 
+  <main>
+    <h2>Designed for the future</h2>
+    <div class="designContainer">
+      <div class="leftText">
+        <div class="para1">
+          <h3>Introducing an extensible editor</h3>
+          <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: 
+            creating content. The editor supports management of multiple blogs and allows easy 
+            manipulation of embeds such as images, videos, and Markdown. Extensibility with plugins and 
+            themes provide easy ways to add functionality or change the looks of a blog.</p>
+        </div>
+        <div class="para2">
+          <h3>Robust content management</h3>
+          <p>Flexible content management enables users to easily move through posts. 
+            Increase the usability of your blog by adding customized categories, sections, format, or flow.
+             With this functionality, you’re in full control.</p>
+        </div>
+      </div>
+      <div class="rightImage">
+        <picture><img src="/images/illustration-editor-desktop.svg" alt=""></picture>
+      </div>
+    </div>
+  </main>
 
+  <section class="infrastructure">
+    <div class="infrastructureContainer">
+      <div class="stateOfArt">
+        <div class="leftPhone">
+          <img src="/images/illustration-phones.svg" alt="Mobile devices">
+        </div>
+        <div class="rightText">
+          <div class="rightTextHolder">
+            <h3>State of the Art Infrastructure</h3>
+            <p>With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast 
+              connectivity. This ensures your site will load instantly, no matter where your readers are, 
+              keeping your site competitive.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="laptopSection">
+    <div class="leftImage">
+      <picture>
+        <img src="/images/illustration-laptop-desktop.svg" alt="Laptop illustration">
+      </picture>
+    </div>
+    <div class="rightText">
+      <div class="para1 laptopPara">
+        <h3>Free, open, simple</h3>
+        <p>Blogr is a free and open source application backed by a large community of helpful developers. It supports features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+      </div>
+      <div class="para2 laptopPara">
+        <h3>Powerful tooling</h3>
+        <p>Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footerLogo">
+      <img src="/images/logo.svg" alt="Blogr logo">
+    </div>
+    <div class="footerLinks">
+      <p>Product</p>
+      <ul> 
+        <li><a href="#">Overview</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Marketplace</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Integrations</a></li>
+      </ul>
+    </div>
+    <div class="footerLinks">
+      <p>Company</p>
+      <ul> 
+        <li><a href="#">About</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+    </div>
+    <div class="footerLinks">
+      <p>Contact</p>
+      <ul> 
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Newsletter</a></li>
+        <li><a href="#">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
 
   <script src="blogr.js"></script>
 </body>

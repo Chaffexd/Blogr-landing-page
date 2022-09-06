@@ -3,8 +3,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Overpass', sans-serif;
-    font-family: 'Ubuntu', sans-serif;
 }
 
 :root {
@@ -15,6 +13,8 @@
     --grayish-blue-footer: hsl(240, 2%, 79%);
     --dark-grayish-blue: hsl(207, 13%, 34%);
     --very-dark-blue: hsl(240, 10%, 16%);
+    --overpass: 'Overpass', sans-serif;
+    --ubuntu: 'Ubuntu', sans-serif;
 }
 
 /* NAVBAR */
@@ -38,6 +38,7 @@ ul {
 
 li {
     display: inline;
+    font-family: var(--overpass);
 }
 
 button img {
@@ -50,6 +51,7 @@ button {
     border: none;
     color: white;
     font-size: .9em;
+    font-family: var(--overpass);
 }
 
 header {
@@ -66,14 +68,21 @@ header h1 {
     font-size: 3em;
     font-weight: 500;
     padding: 2em 0 .5em 0;
+    font-family: var(--overpass);
+    font-weight: 600;
 }
 
 header p {
     color: white;
     padding: 0 0 2em 0;
+    font-family: var(--overpass);
 }
 
-.startButton, .loginButton {
+.signUpButton {
+    margin-left: 1em;
+}
+
+.startButton, .signUpButton {
     background-color: white;
     color: var(--dark-red-cta);
     border-radius: 30px;
@@ -111,6 +120,18 @@ header p {
     visibility: hidden;
 }
 
+.dropdown-content2 {
+    position: absolute;
+    right: -40%;
+    height: 12em;
+}
+
+.dropdown-content3 {
+    position: absolute;
+    right: -52%;
+    height: 10em;
+}
+
 .show {
     visibility: visible;
 }
@@ -126,4 +147,208 @@ header p {
 
 .dropdown li a:hover {
     font-weight: bold;
+}
+
+/* main section  */
+main {
+    text-align: center;
+    padding-top: 14em;
+    padding-bottom: 9em;
+    font-family: var(--overpass);
+}
+
+main h2 {
+    font-size: 2em;
+    color: var(--dark-blue-heading);
+    font-weight: 500;
+}
+
+.designContainer {
+    display: flex;
+    padding-left: 10em;
+    height: 35em;
+    margin-bottom: 5em;
+}
+
+.leftText {
+    width: 50%;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.para1 {
+    padding-bottom: 2em;
+    width: 90%;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+.para2 {
+    width: 90%;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+.para1 h3, .para2 h3 {
+    padding-bottom: 1.5em;
+    font-size: 1.5em;
+    color: var(--dark-blue-heading);
+}
+
+.para1 p, .para2 p {
+    color: var(--dark-grayish-blue);
+}
+
+.rightImage {
+    width: 50%;
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.rightImage picture img {
+    position: relative;
+}
+
+/* Phone section */
+.infrastructure {
+    width: 100%;
+    height: 25em;
+    background: linear-gradient(to bottom, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+}
+
+.stateOfArt {
+    display: flex;
+    position: relative;
+    border-radius: 0 6em 0 6em;
+    background-image: url(images/bg-pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-position: bottom -8em left -14em;
+    border-radius: 0 6em 0 6em;
+    height: 100%;
+    width: 100%;
+}
+
+.infrastructureContainer {
+    height: 100%;
+    width: 100%;
+}
+
+.leftPhone {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftPhone img {
+    position: relative;
+    top: 1em;
+}
+
+.rightText {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.rightTextHolder {
+    width: 80%;
+    font-family: var(--overpass);
+}
+
+.rightText h3 {
+    padding-bottom: 1.5em;
+    font-size: 2em;
+    letter-spacing: 1px;
+    color: white;
+    font-weight: 600;
+}
+
+.rightText p {
+    color: white;
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-weight: 300;
+}
+
+.laptopSection {
+    display: flex;
+    width: 100%;
+    padding-top: 8em;
+    padding-bottom: 8em;
+}
+
+.leftImage {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.leftImage picture img {
+    position: relative;
+    left: -17.5em;
+}
+
+.laptopPara {
+    font-family: var(--overpass);
+    width: 100%;
+    padding-right: 7em;
+}
+
+.laptopPara h3 {
+    color: var(--dark-blue-heading);
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.laptopPara p {
+    color: var(--dark-grayish-blue);
+    line-height: 25px;
+    font-weight: 300;
+}
+
+/* FOOTER */
+
+footer {
+    background: var(--very-dark-blue);
+    height: 22em;
+    border-radius: 0 6em 0 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 4em 4em;
+    font-family: var(--overpass);
+}
+
+.footerLinks p {
+    color: white;
+    padding-top: .5em;
+    padding-bottom: 2em;
+    font-weight: 600;
+}
+
+.footerLinks ul {
+    list-style-type: none;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+}
+
+.footerLinks ul li a {
+    text-decoration: none;
+    color: var(--grayish-blue-footer);
+    font-weight: 300;
+}
+
+.footerLinks ul li {
+    padding-bottom: 1em;
+}
+
+.footerLinks ul li a:hover {
+    text-decoration: underline;
 }

@@ -1,13 +1,13 @@
 const dropdownButtons = document.querySelectorAll(".dropdownButton");
-const dropdownNav = document.querySelector(".dropdown");
+const dropdownNav = document.querySelectorAll(".dropdown");
+const navBar = document.querySelector("#navBar");
 
-function toggleDropdown() {
-    dropdownNav.classList.toggle("show")
+function toggleDropdown(ind) {
+    dropdownNav[ind].classList.toggle("show")
 }
 
-dropdownButtons.forEach((btn) => {
-    btn.addEventListener("click", (e) => {
-        const button = e.target;
-        toggleDropdown(button)
+dropdownButtons.forEach((btn, index) => {
+    btn.addEventListener("click", () => {
+        toggleDropdown(index)
     })
 })
