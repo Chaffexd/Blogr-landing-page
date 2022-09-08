@@ -12,7 +12,7 @@
 </head>
 <body>
   <header>
-    <nav>
+    <nav class="desktop">
       <div class="siteNav">
         <img src="/images/logo.svg" alt="Blogr logo">
         <ul id="navBar">
@@ -56,6 +56,45 @@
         <button class="signUpButton">Sign Up</button>
       </div>
     </nav>
+    <nav class="mobile">
+      <img src="/images/logo.svg" alt="Blogr logo">
+      <button class="hamburger" id="mobileNav"><img src="/images/icon-hamburger.svg" alt="Drop down menu"></button>
+      <div class="mobileDrop" id="mobileDropDown">
+        <div class="mainEle">
+          <button class="mobileProd mobDropdownButton">Product
+            <img src="/images/icon-arrow-dark.svg" alt="dropdown arrow"></img>
+            <ul class="mobdropdown mobdropdown-content1">
+              <li><a href="#">Overview</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Marketplace</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Integrations</a></li>
+            </ul>
+          </button>
+          <button class="mobileComp mobDropdownButton">Company
+            <img src="/images/icon-arrow-dark.svg" alt="dropdown arrow">
+            <ul class="mobdropdown mobdropdown-content1 mob2">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </button>
+          <button class="mobileConnect mobDropdownButton">Connect
+            <img src="/images/icon-arrow-dark.svg" alt="dropdown arrow">
+            <ul class="mobdropdown mobdropdown-content1">
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Newsletter</a></li>
+              <li><a href="#">LinkedIn</a></li>
+            </ul>
+          </button>
+        </div>
+        <div class="secondaryEle">
+          <button class="mobileLogin">Login</button>
+          <button class="mobileSignUp">Sign Up</button>
+        </div>
+      </div>
+    </nav>
     <h1>A modern publishing platform</h1>
     <p>Grow your audience and build your online brand</p>
     <button class="startButton">Start for free</button>
@@ -81,7 +120,10 @@
         </div>
       </div>
       <div class="rightImage">
-        <picture><img src="/images/illustration-editor-desktop.svg" alt=""></picture>
+        <picture>
+          <img src="/images/illustration-editor-desktop.svg" alt="illustration" class="desktopIllu">
+          <img src="/images/illustration-editor-mobile.svg" alt="illustration" class="mobileIllu">
+        </picture>
       </div>
     </div>
   </main>
@@ -108,7 +150,8 @@
   <section class="laptopSection">
     <div class="leftImage">
       <picture>
-        <img src="/images/illustration-laptop-desktop.svg" alt="Laptop illustration">
+        <img src="/images/illustration-laptop-desktop.svg" alt="Laptop illustration" class="desktopLap">
+        <img src="/images/illustration-laptop-mobile.svg" alt="Laptop illustration" class="mobileLap">
       </picture>
     </div>
     <div class="rightText">

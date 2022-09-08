@@ -82,6 +82,18 @@ header p {
     margin-left: 1em;
 }
 
+.signUpButton:hover, .startButton:hover {
+    background-color: var(--light-red-cta);
+    color: var(--white);
+    transition: ease-in .1s;
+}
+
+.learnMoreButton:hover {
+    background-color: var(--white);
+    color: var(--dark-red-cta);
+    transition: ease-in .1s;
+}
+
 .startButton, .signUpButton {
     background-color: white;
     color: var(--dark-red-cta);
@@ -118,6 +130,9 @@ header p {
     flex-direction: column;
     justify-content: space-evenly;
     visibility: hidden;
+    box-shadow: 9px 9px 9px -4px rgba(0,0,0,0.67);
+    -webkit-box-shadow: 9px 9px 9px -4px rgba(0,0,0,0.67);
+    -moz-box-shadow: 9px 9px 9px -4px rgba(0,0,0,0.67);
 }
 
 .dropdown-content2 {
@@ -133,7 +148,7 @@ header p {
 }
 
 .show {
-    visibility: visible;
+    visibility: visible !important;
 }
 
 .rotateImg {
@@ -202,15 +217,20 @@ main h2 {
 }
 
 .rightImage {
-    width: 50%;
-    max-height: 100%;
+    max-width: 50%;
+    max-height: 150%;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
+}
+
+.rightImage picture {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .rightImage picture img {
-    position: relative;
+    max-width: 100%;
 }
 
 /* Phone section */
@@ -351,4 +371,186 @@ footer {
 
 .footerLinks ul li a:hover {
     text-decoration: underline;
+}
+
+/* MOBILE */
+.mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 975px) {
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 2em;
+    }
+    .hamburger img {
+        padding-right: 0;
+    }
+    header {
+        height: 85vh;
+        width: 100%;
+        background-size: 350%;
+        background-position: 30% 40%;
+        background-image: url(images/bg-pattern-intro-mobile.svg), linear-gradient(100deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    }
+    header h1 {
+        padding: 1em 0 0.5em 0;
+    }
+    main {
+        padding-top: 7em;
+    }
+    .designContainer {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-left: 0;
+        height: auto;
+    }
+    .leftText {
+        text-align: center;
+        width: 100%;
+        align-items: center;
+        padding-top: 2em;
+    }
+    .desktopIllu {
+        display: none;
+    }
+    .rightImage {
+        max-width: 100%;
+    }
+    .infrastructure {
+        height: 35em;
+        border-radius: 0 6em 0 6em;
+    }
+    .stateOfArt {
+        background-size: 160%;
+        background-position: center top -12em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .leftPhone {
+        position: relative;
+
+    }
+    .leftPhone img {
+        max-width: 200%;
+        top: -35%;
+    }
+    .rightText {
+        width: 100%;
+        position: relative;
+        top: -23%;
+    }
+    .rightTextHolder {
+        width: 100%;
+        text-align: center;
+        padding: 0 1em 0 1em;
+    }
+    .laptopSection {
+        flex-direction: column;
+        padding-top: 4em;
+        padding-bottom: 4em;
+    }
+    .leftImage {
+        justify-content: center;
+        width: 100%;
+    }
+    .leftImage picture img {
+        left: 0;
+        padding-bottom: 2em;
+    }
+    .desktopLap {
+        display: none;
+    }
+    .laptopPara {
+        padding-right: 0;
+        padding: 0 2em 0 2em;
+        text-align: center;
+    }
+    .para1 {
+        padding-bottom: 4em;
+    }
+    footer {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .footerLogo {
+        padding-bottom: 4em;
+    }
+    .mobileDrop {
+        width: 83%;
+        height: 50%;
+        top: 15%;
+        left: 8%;
+        background-color: var(--white);
+        position: absolute;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        visibility: hidden;
+    }
+    .mobileDrop button {
+        color: var(--dark-blue-heading);
+    }
+    .mainEle {
+        border-bottom: 1px solid var(--dark-red-cta);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        height: 40%;
+        width: 60%;
+        font-size: 1.3em;
+    }
+    nav img {
+        padding-right: 0;
+    }
+    .mobileConnect {
+        margin-bottom: 2em;
+    }
+    .secondaryEle {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        width: 80%;
+        height: 20%;
+        font-size: 1.3em;
+    }
+    .mobdropdown-content1 {
+        visibility: hidden;
+        position: absolute;
+        background-color: var(--dark-grayish-blue);
+        border-radius: 6px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        padding: 1em;
+    }
+    .mobdropdown-content1 li a {
+        text-decoration: none;
+        color: white;
+    }
+    .mob2 {
+        width: 140px;
+    }
+    .mobdropdown-content1 li {
+        padding-bottom: .5em;
+    }
+    .mobileLogin:hover, .mobileSignUp:hover {
+        text-decoration: underline;
+    }
 }
