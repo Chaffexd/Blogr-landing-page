@@ -332,6 +332,10 @@ main h2 {
     font-weight: 300;
 }
 
+.mobileIllu {
+    display: none;
+}
+
 /* FOOTER */
 
 footer {
@@ -552,5 +556,9 @@ footer {
     }
     .mobileLogin:hover, .mobileSignUp:hover {
         text-decoration: underline;
+    }
+    .mobileIllu{
+        max-width: 100%;
+        display: block;
     }
 }
