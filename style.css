@@ -381,6 +381,9 @@ footer {
 .mobile {
     display: none;
 }
+.mobileLap {
+    display: none;
+}
 
 @media only screen and (max-width: 975px) {
     .desktop {
@@ -557,8 +560,11 @@ footer {
     .mobileLogin:hover, .mobileSignUp:hover {
         text-decoration: underline;
     }
-    .mobileIllu{
+    .mobileIllu {
         max-width: 100%;
+        display: block;
+    }
+    .mobileLap {
         display: block;
     }
 }
