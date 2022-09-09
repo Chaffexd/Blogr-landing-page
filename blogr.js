@@ -7,6 +7,9 @@ const mobileDropDownButtons = document.querySelectorAll(".mobDropdownButton");
 const mobileDropDownNav = document.querySelectorAll(".mobdropdown")
 
 function toggleDropdown(ind) {
+    // Hides drop down when selecting another menu
+    dropdownNav.forEach(drop => drop.classList.remove("show"))
+    // Toggles drop down
     dropdownNav[ind].classList.toggle("show")
 }
 
